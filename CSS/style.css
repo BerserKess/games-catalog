@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-text: "Roboto", sans-serif;
+    --primary-color: #f4f4f4;
+    --secondary-color: #da1e26;
+}
+body{
+    font-family: var(--font-text);
+    text-align: center;
+    background-image: url("https://cdn.pixabay.com/photo/2014/11/30/17/15/theater-551797_960_720.jpg");
+    background-color: var(--primary-color);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+.head-container{
+    text-align: center;
+    padding: 20px;
+}
+
+.page-title{
+    color: var(--primary-color);
+    margin: 0 0 5px;
+}
+h1 > span{
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 5px 18px;
+}
+
+.text-color{    
+    color: var(--secondary-color);
+}
+
+
+
+.page-logo{
+    margin-top: 10px;
+    width: 200px;
+}
+
+.alura-logo{
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+body > img{
+    margin: 0 10px;
+}
+
+img{
+    max-height: 250px;
+}
+.main-container{
+    max-width: 100%;
+    display: block;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    background-color: #da1e2733;
+}
+
+.forms label{
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.forms input{
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+button{
+    margin-top: 10px;
+    padding: 7px;
+    font-family: var(--font-text);
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--secondary-color);
+    transition: 0.7s;
+}
+
+#games{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid green; */
+    gap: 20px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.game-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    /* border: 1px solid green; */
+}
+
+.game-cover{
+    width: 180px;
+    height: 250px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.game-name{
+    max-height: 10px;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
